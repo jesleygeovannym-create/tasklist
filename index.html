@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/flatpickr/dist/flatpickr.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/flatpickr"></script>
+
+    <link rel="stylesheet" href="css/style.css">
+
+    <title>Lista de Tareas avanzada</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+
+<body>
+
+    <div class="container mt-5">
+
+        <h1 class="text-center mb-4">Lista de tareas avanzadas</h1>
+
+        <div class="row justify-content-center">
+
+            <div class="col-md-8">
+
+                <div class="input-group mb-3">
+
+                    <input type="text"
+                           id="taskInput"
+                           class="form-control"
+                           placeholder="Nueva Tarea">
+
+                    <select id="categorySelect" class="form-select" style="max-width: 150px;">
+                        <option value="">Categoría</option>
+                        <option value="trabajo">Trabajo</option>
+                        <option value="personal">Personal</option>
+                        <option value="estudio">Estudio</option>
+                    </select>
+
+                    <input type="text"
+                           id="dueDateInput"
+                           class="form-control"
+                           placeholder="Fecha de vencimiento"
+                           style="max-width: 200px;">
+
+                    <button class="btn btn-primary" type="button" id="addTask">
+                        Agregar
+                    </button>
+
+                </div>
+
+                <div class="input-group mb-3">
+
+                    <input type="text"
+                           id="searchInput"
+                           class="form-control"
+                           placeholder="Buscar tareas">
+
+                    <select id="filterSelect" class="form-select" style="max-width: 150px;">
+                        <option value="all">Todas</option>
+                        <option value="active">Activas</option>
+                        <option value="completed">Completadas</option>
+                    </select>
+
+                </div>
+
+                <ul id="tasklist" class="list-group mb-3">
+                    <!-- Las tareas se agregarán aquí automáticamente -->
+                </ul>
+
+                <div id="statics" class="alert alert-info" role="alert">
+                    Total de tareas: 0 | Completadas: 0 | Activas: 0
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+    
+    
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+
+    <script src="js/script.js"></script>
+
+</body>
+</html>
